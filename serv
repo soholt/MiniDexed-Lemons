@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ ! -d "node_modules" ]
+then
+    echo "npm install"
+    npm install
+fi
+
+npm run serv

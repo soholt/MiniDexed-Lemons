@@ -1,0 +1,39 @@
+{
+  "type": "module",
+  "name": "minidexed-lemons",
+  "version": "0.0.0",
+  "description": "Control for MiniDexed",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soholt/MiniDexed-Lemons.git"
+  },
+  "author": "Gintaras Valatka",
+  "keywords": [
+    "MiniDexed",
+    "Yamaha",
+    "DX7",
+    "DX1",
+    "DX5",
+    "TX816",
+    "DX7II",
+    "TX802",
+    "dexed",
+    "midi",
+    "sysex",
+    "librarian"
+  ],
+  "bugs": {
+    "url": "https://github.com/soholt/MiniDexed-Lemons/issues"
+  },
+  "homepage": "https://github.com/soholt/MiniDexed-Lemons#readme",
+  "private": true,
+  "scripts": {
+    "serv": "node localServer.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "https": "^1.0.0",
+    "serialport": "^12.0.0",
+    "ws": "^8.14.2"
+  }
+}
