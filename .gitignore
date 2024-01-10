@@ -1,6 +1,6 @@
-#ssids.py
-#minidexed.crt
-#minidexed.key
+ssids.py
+minidexed.crt
+minidexed.key
 __pycache__
 
 # Logs
