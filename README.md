@@ -5,7 +5,7 @@
 
 **Currently:**
 * Bank and Voice [MiniDexed_2024-01-16-753c205.zip](https://github.com/probonopd/MiniDexed/releases/download/continuous/MiniDexed_2024-01-16-753c205.zip) or later
-* Voice editing! select a performance(other than default) and edit button will become active (got dexed with midi on aarch64 via Ardour vst working and I can controll it via midi, MiniDexed is not responding yet), now it needs a maniqure.
+* Voice editing! select a performance(other than default) and edit button will become active (got dexed with midi on aarch64 via Ardour vst working and I can controll it via midi, (not working in gadget mode), now it needs a maniqure.
 * Virtual Midi Keyboard
 * TG Volumes & mutes ok, Main Volume sends commands but threre is a Bug
 * Single view with switches, continous view and groups
@@ -34,7 +34,7 @@
 * Updates via https
 * Horizontal controlls
 
-**Used this performance for testing [./performance](https://github.com/soholt/MiniDexed-Lemons/tree/main/tools)**
+**Used this performance for testing [./performance](https://github.com/soholt/MiniDexed-Lemons/tree/main/performance)**
 
 ## Debian/Ubuntu instructions:
 
