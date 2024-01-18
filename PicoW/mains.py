@@ -12,6 +12,7 @@ import json, deflate #gzip
 with open('/dist/assets/minidexed.json.gz', 'rb') as f:
     with deflate.DeflateIO(f, deflate.GZIP, 6) as f:
         config = json.load(f)
+        # Read config and set UART speed: MIDIBaudRate=31250
 '''
 conf = {
     'dev': True,

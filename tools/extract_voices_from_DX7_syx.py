@@ -46,21 +46,13 @@ if __name__ == '__main__':
     voxs = get_voices(vox_path)
     #print('files',files)
 
-    c = 1 # start banks from 1, not 0
+    c = 0 # start banks from 1, not 0
     for i in voxs:
         # voxs[_id] = { 'id':id, 'file':i, 'name':name, 'size':0, 'data':{} }
         #print(voxs[i])
         voxs[i]['data'] = extract_dx7_voices(vox_path + '/' + voxs[i]['file'])
         
-        if i == 0: # @TODO tmp hack for banks
-            print('-- @TODO report bug, tmp hack: dropping bank 0 so bank 1 becomes 0 and sending 0xb1 20 00 selects correct bank')
-        else:
-            voices[i-1] = voxs[i] #voices[i] = voxs[i]
-        # Count from 0
-        #voices[i] = voxs[i] #voices[i] = voxs[i]
-
-        # Count from 1
-        #voices[c] = voxs[i] #voices[i] = voxs[i]
+        voices[c] = voxs[i] #voices[i] = voxs[i]
 
         # _dat['data'] = parse_ini(ini)
         #    voices[file] = extract_dx7_voices(_path + '/' + file)

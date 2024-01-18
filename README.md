@@ -4,7 +4,10 @@
 ### With phone/tablet/desktop access (no need for rotary enc & lcd)
 
 **Currently:**
-* Main + TG Volumes & mute
+* Bank and Voice [MiniDexed_2024-01-16-753c205.zip](https://github.com/probonopd/MiniDexed/releases/download/continuous/MiniDexed_2024-01-16-753c205.zip) or later
+* Voice editing! select a performance(other than default) and edit button will become active (got dexed with midi on aarch64 via Ardour vst working and I can controll it via midi, MiniDexed is not responding yet), now it needs a maniqure.
+* Virtual Midi Keyboard
+* TG Volumes & mutes ok, Main Volume sends commands but threre is a Bug
 * Single view with switches, continous view and groups
 * Show/Hide individual and group controls
 * Mouse wheel over controller to inc/dec + reset button @TODO check all work
@@ -13,7 +16,7 @@
 * Pico W - WebSocket -> Serial, wire Pico W Serial pins 0:TX 1:RX -> Pi Serial connection
 * Pico W in AP mode if ssids.py not configured or local connection fails or in the field
 * For lower latency serial speed could be increased to 115200 or higher in minidexed.ini MIDIBaudRate=115200 and baudrate=115200 in main.py to match
-* Var UI bugs
+* Midi Channel displays settings from .ini, but does not set TG for listening @TODO
 
 **Future:**
 * Https + wss on Pico W
@@ -31,6 +34,7 @@
 * Updates via https
 * Horizontal controlls
 
+**Used this performance for testing [./performance](https://github.com/soholt/MiniDexed-Lemons/tree/main/tools)**
 
 ## Debian/Ubuntu instructions:
 
@@ -101,4 +105,4 @@ Frameworks: Vue, Bootstrap, micropython:microdot, node:express,ws and others, ma
 
 Made on Pi5
 
-Ui src soon
+[dev](https://github.com/soholt/MiniDexed-Lemons-Dev)
